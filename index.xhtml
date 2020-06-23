@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>ANA SAYFA</title>
+	<link rel="stylesheet" type="text/css" href="pics/sayfaj.css"/>
+    <style type="text/css">
+                div{
+        border: 2px solid black;
+	width:320px;
+	height:400px;
+	position:absolute;
+	top:120px;
+	left:510px;
+	background-color:#ffffff;
+	border-radius: 50px;
+        border-color: #73AD21;
+         -webkit-animation: fadein 1.5s;
+        }
+        
+        @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+}
+    </style> 
+    </h:head>
+    <h:body>
+        <div>
+         <table align="center" width ="92%">
+                <tr>
+                    <th class="bol"><h:form><h:commandButton action = "index" image="pics/home.png" style=" background-color:#bfbfbf;width:44px;height:44px;display:block;margin-left:1px;" /></h:form></th>
+                    <th>Ana Sayfa</th>
+                </tr>
+                
+            </table>
+        <h:form>
+        <h:commandButton action = "#{baraj.yon4()}" value = "baraj" class="btn"/>
+        </h:form>
+        <h:form>
+        <h:commandButton action = "#{baraj.yon2()}" value = "ayricalik"   class="btn"/>
+        </h:form>
+        <h:form>
+        <h:commandButton action = "#{baraj.yon1()}" value = "altyapi" class="btn"/>
+        </h:form>
+        <h:form>
+        <h:commandButton action = "#{baraj.yon3()}" value = "kullanim"   class="btn"/>
+        </h:form>
+        </div>
+    </h:body>
+</html>
+
